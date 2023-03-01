@@ -1,0 +1,26 @@
+#about_section{
+margin-bottom: 100px;
+.main{
+    position: relative;
+    .overly{
+        position: absolute;
+        left: 0;
+        bottom: 100px;
+        z-index: -1;
+    }
+    .content{
+        h1{
+            @include title(36px);
+           }
+        h2{
+            @include title(36px);
+            font-weight: 200;
+            margin-bottom: 42px;
+           }
+        p{
+            margin-bottom: 42px;
+           }
+    }
+}
+
+}

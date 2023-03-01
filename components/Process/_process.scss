@@ -1,0 +1,58 @@
+#process_section{
+    margin-bottom: 110px;
+    .main{
+        position: relative;
+        .items{
+            text-align: center;
+            .circle{
+                position: relative;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background: $black_color;
+                margin: 0 auto;
+                margin-bottom: 25px;
+                .inner_circle{
+                    position: absolute;
+                    height: 160px;
+                    width: 160px;
+                    border-radius: 50%;
+                    left: 50%;
+                    top: 50%;
+                    background: $hover_color;
+                    transform: translate(-50%, -50%);
+                    h2{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        @include title(64px);
+                        color: $main_color;
+                    }
+                }
+
+            }
+            .content{
+                display: flex;
+                .icon i{
+                    color: $white;
+                    font-size: 30px;
+                }
+                .text a{
+                    @include title(24px);
+                    margin-left: 30px;
+
+                }
+
+            }
+        }
+        .overly{
+            position: absolute;
+            left: -74px;
+            bottom: 124px;
+            z-index: -1;
+            width: 108%;
+        }
+    }
+    
+}

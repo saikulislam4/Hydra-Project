@@ -1,0 +1,19 @@
+@mixin heading($size, $color){
+    font-size: $size;
+    color: $color;
+    font-weight: 700;
+    text-transform:capitalize;
+    font-family: $Montserrat;
+    margin-bottom: 30px;
+
+
+}
+@mixin title($size){
+    font-size: $size;
+    color: $white;
+    font-weight: 700;
+    text-transform:uppercase;
+    font-family: $Montserrat;
+
+
+}

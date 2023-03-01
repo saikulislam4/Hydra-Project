@@ -1,0 +1,95 @@
+#services_section{
+    .main{
+        position: relative;
+        .items{
+            padding: 25px;
+            border-radius: 40px;
+            background: $bg_color;
+            margin-bottom: 110px;
+            .circle{
+                height: 220px;
+                width: 220px;
+                border-radius: 50%;
+                background: $overly_color;
+                margin: 0 auto;
+                position: relative;
+                .inner_circle{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    height: 190px;
+                    width: 190px;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    overflow: hidden;
+                }
+            }
+            .content {
+            h1{
+                text-align: center;
+                position: relative;
+                @include title(24px);
+                margin-bottom: 40px;
+            }
+            ::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 75%;
+                background: $border_color;
+                bottom:-10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+            .button{
+
+                text-align: center;
+                margin: 35px auto;
+                a{
+                    margin-right: 0;
+                }
+            }
+        }
+        .overly{
+            position: absolute;
+            left: 0;
+            bottom: -233px;
+            z-index: -1;
+        }
+        .techo{
+            position: relative;
+            border-radius: 160px;
+            padding: 100px 0;
+            overflow: hidden;
+            height: 300px;
+            width: 100%;
+        
+            .content{
+                position: absolute;
+                z-index: 1;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                h1{
+                    @include title(36px);
+                }
+                h2{
+                    @include title(36px);
+                    font-weight: 200;
+                }
+
+
+            }
+            img{
+                transform: translate(0px, -267px);
+            }
+        }
+    }
+}

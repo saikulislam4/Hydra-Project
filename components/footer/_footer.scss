@@ -1,0 +1,62 @@
+#footer_section{
+    margin-top: 120px;
+    .main{
+        position: relative;
+        .items{
+            border-right: 3px solid $border_color;
+            padding-left: 70px;
+            width: 25%;
+            .image img{
+                width: 70%;
+            }
+            .item{
+                ul li{
+                display: block;
+                margin-bottom: 20px;
+                a{
+                    line-height: 23px;                    @include title(16px);
+                    
+                }
+              
+                }
+                .icon a{
+                    position: relative;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background: $hover_color;
+                    i{
+                        color: $main_color;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                       
+                    }
+                    }
+                .common_button a{
+                    font-size: 10px;
+                }
+            }
+
+        }
+        :last-child{
+            border-right: none;
+            }
+
+        }
+        .lower_footer{
+            border-top: 2px solid $border_color;
+            padding: 50px 0;
+            text-align: center;
+            p{
+                @include title(14px);
+            }
+        }
+        .overly{
+            position: absolute;
+            left: 0;
+            bottom: 180px;
+            z-index: -1;
+        }
+    }

@@ -1,0 +1,83 @@
+#banner {
+    padding-top: 400px;
+    .content{
+        h1{
+            @include heading(36px, $white);
+            text-transform: uppercase;
+            span{
+                background: $hover_color;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+        p{
+            @include heading(14px, $white);
+            font-weight: 400;
+        }
+        .common_button i{
+            color: $white;
+            font-size: 20px;
+            font-weight: 600;
+ 
+
+        }
+    }
+    
+    .image{
+        width: 530px;
+        height: 450px;
+        background: $overly_color;
+        padding: 15px;
+        border-radius: 100px 100px 100px 240px;
+    }
+    .main{
+        position: relative;
+    }
+    .overly{
+        position: absolute;
+        z-index: -1;
+        left: -100px;
+        top: -220px;
+        width: 120%;
+    }
+    .contacts{
+        border-radius: 90px;
+        margin: 80px 0;
+        display: flex;
+        padding: 30px;
+        background: $bg_color;
+        .items{
+            display: flex;
+            width: 33.33333%;
+          margin-left: 20px;
+            border-right: 1px solid $border_color;
+            .icon i{
+                font-size: 50px;
+                color: $white;
+            }
+            .info h1{
+                @include title(24px);
+                text-transform: capitalize;
+                margin-left: 15px;
+                span{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 6px;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+        }
+        :last-child{
+            border: none;
+        }
+    }
+    .common_title{
+
+        p{
+         @include title(12px);
+        }
+    }
+}
+
+    
